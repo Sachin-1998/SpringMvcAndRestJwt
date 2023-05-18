@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1 th:text="${#strings.toUpperCase(name) }"></h1>
+<h3>This is thymeleaf page</h3>
+<h2> Name of the employee is <span th:text="${name}"></span></h2>
+
+<h1 th:text="${Date}"></h1>
+<div th:with="a=10,b=35,n=${name}">
+<h1 th:text="' the value of a is '+${a}"></h1>
+
+<h1 th:text="' the value of n is '+${n}"></h1>
+
+<h1 th:text="'the sum of '+${a}+' and '+${b}+' is '+${a+b}"></h1>
+
+</div>
+
+
+</body>
+</html>

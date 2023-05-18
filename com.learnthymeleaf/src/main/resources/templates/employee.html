@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Employee Details</title>
+</head>
+<body>
+	<h1>Employee Details...simple variable</h1>
+	<div>Employee-Id : <span th:text="${myemp.eid}"></span></div>
+	<div>Employee-Name : <span th:text="${myemp.name}"></span></div>
+	<div>Employee-Mobile-Number : <span th:text="${myemp.mobileNumber}"></span></div>
+	
+	<br>
+	<br>
+	
+	<h1>Employee Details......selection variables</h1>
+	
+	<div th:object="${myemp}">
+	<p>Employee-Id : <span th:text="*{eid}"></span></p>
+	<p>Employee-Name : <span th:text="*{name}"></span></p>
+	<p>Employee-Mobile-Number : <span th:text="*{mobileNumber}"></span></p>
+	</div>
+	
+	
+	
+	
+</body>
+</html>

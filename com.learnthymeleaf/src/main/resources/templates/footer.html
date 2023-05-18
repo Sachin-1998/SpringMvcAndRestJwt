@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+	<footer id="fragmentTag" th:fragment="footer1(title,subtitle)">
+	
+	<div class="container">
+	<h1>This is about your favourite places</h1>
+	<h1 th:text="${title}"></h1>
+	<h1 th:text="${subtitle}"></h1>
+	<p> My favourite place is the beach. 
+	At the beach, I feel joyful and have fun at the same time.
+	 I can enjoy the water and the sunset and have lots of fun.
+	  Mom says the sun's rays are good for getting vitamin D while we have some fun on the beach.
+	
+	</p>
+	</div>
+	</footer>
+</body>
+</html>
